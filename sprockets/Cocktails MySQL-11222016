@@ -1,0 +1,22 @@
+-- Adminer 4.2.5 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `Cocktails`;
+CREATE TABLE `Cocktails` (
+  `CocktailsID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` varchar(50) DEFAULT NULL,
+  `Ingredients` text,
+  `Description` text,
+  `Category` varchar(50) DEFAULT NULL,
+  `Price` float DEFAULT NULL,
+  PRIMARY KEY (`CocktailsID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `Cocktails` (`CocktailsID`, `Name`, `Ingredients`, `Description`, `Category`, `Price`) VALUES
+(1,	'Moscow Mule',	'Vodka, Ginger Beer,Lime',	'It has a kick',	'Vodka',	7.99);
+
+-- 2016-11-23 01:04:42
